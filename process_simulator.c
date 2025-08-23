@@ -1,20 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-typedef struct {
-    int pid;
-    char name[50];
-    int priority;
-} Process;
+#include <unistd.h>
 
 int main() {
-    printf("Process Simulator v1.0 - Terminal Version\n");
-    printf("========================================\n");
-    printf("This version was created via command line\n");
+    printf("Process Simulator v2.0 - Enhanced Web Version\n");
+    printf("=============================================\n");
+    printf("This enhanced version was created via GitHub web interface\n");
+    printf("Now with additional system headers!\n");
     
-    Process test_process = {1001, "text_editor", 5};
-    printf("Sample process: PID=%d, Name=%s, Priority=%d\n", 
-           test_process.pid, test_process.name, test_process.priority);
-    
+    printf("Current working directory capabilities added\n");
     return 0;
 }
